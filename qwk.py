@@ -34,8 +34,15 @@ def install_chrome():
 	keyboard.press(Key.enter)
 	keyboard.release(Key.enter)
 	sleep(4)
+	##naximize
+	pyautogui.keyDown("alt")
+	pyautogui.keyDown("space")
+	pyautogui.press('x')
+	pyautogui.keyUp("alt")
+	pyautogui.keyUp("space")
+	sleep(1)
 	##run installer
-	mouse.position = (722, 273)
+	mouse.position = (960, 705)
 	mouse.click(Button.left, 1)
 	sleep(25)
 	##maximize
