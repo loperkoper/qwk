@@ -746,7 +746,7 @@ def panj():
 		keyboard.release(Key.cmd)
 		keyboard.release(Key.ctrl)
 		keyboard.release('d')
-		sleep(3)
+		sleep(4)
 		## open chrome
 		#webbrowser.get("C:\Program Files\Google\Chrome\Application\chrome.exe").open_new('https://www.qwiklabs.com/users/sign_up')
 		#sleep(2)
@@ -755,8 +755,9 @@ def panj():
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(3)
+		sleep(5)
 		pyautogui.typewrite("chrome", interval = 0.02)
+		sleep(4)
 		x = 379
 		y = 212
 		pyautogui.moveTo( x , y , duration = 0.1)
