@@ -131,6 +131,7 @@ def signup():
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 2 , interval = 0.1)
+		sleep(0.2)
 		c = pyperclip.paste()
 		# back to previos tab
 		x = 62
@@ -463,6 +464,7 @@ def signin():
 		##copy user:
 		mouse.position = (248, 393)
 		mouse.click(Button.left, 2)
+		sleep(0.2)
 		c = pyperclip.paste()
 		sleep(1)
 		##back to console
@@ -493,6 +495,7 @@ def signin():
 		##copy pass:
 		mouse.position = (251, 475)
 		mouse.click(Button.left, 2)
+		sleep(0.2)
 		c = pyperclip.paste()
 		##back to console
 		keyboard.press(Key.ctrl)
