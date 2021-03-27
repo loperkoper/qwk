@@ -7,6 +7,7 @@ from pynput.mouse import Button, Controller
 mouse = Controller()
 from pynput.keyboard import Key, Controller
 keyboard = Controller()
+import pyperclip
 import pyautogui
 from time import sleep
 import random
@@ -165,6 +166,7 @@ def signup():
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 2 , interval = 0.1)
+		c = pyperclip.paste()
 		# back to previos tab
 		x = 62
 		y = 17
@@ -193,10 +195,7 @@ def signup():
 		#pyautogui.moveTo( x , y , duration = 0.1)
 		#sleep(0.5)
 		#pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		pyautogui.press('tab')
-		pyautogui.keyDown("ctrl")
-		pyautogui.press('v')
-		pyautogui.keyUp("ctrl")
+		pyautogui.typewrite(c, interval = 0.02)
 		## select company
 		#x = 695
 		#y = 524
@@ -499,6 +498,7 @@ def signin():
 		##copy user:
 		mouse.position = (248, 393)
 		mouse.click(Button.left, 2)
+		c = pyperclip.paste()
 		sleep(1)
 		##back to console
 		keyboard.press(Key.ctrl)
@@ -516,10 +516,7 @@ def signin():
 		keyboard.release(Key.ctrl)
 		keyboard.press(Key.backspace)
 		keyboard.release(Key.backspace)
-		keyboard.press(Key.ctrl)
-		keyboard.press('v')
-		keyboard.release('v')
-		keyboard.release(Key.ctrl)
+		keyboard.type(c)
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
 		##back to pre page
@@ -531,6 +528,7 @@ def signin():
 		##copy pass:
 		mouse.position = (251, 475)
 		mouse.click(Button.left, 2)
+		c = pyperclip.paste()
 		##back to console
 		keyboard.press(Key.ctrl)
 		keyboard.press('2')
@@ -547,10 +545,7 @@ def signin():
 		keyboard.release(Key.ctrl)
 		keyboard.press(Key.backspace)
 		keyboard.release(Key.backspace)
-		keyboard.press(Key.ctrl)
-		keyboard.press('v')
-		keyboard.release('v')
-		keyboard.release(Key.ctrl)
+		keyboard.type(c)
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
 		sleep(3)
