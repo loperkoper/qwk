@@ -14,41 +14,6 @@ import random
 import string
 sleep(5)
 def install_chrome():
-	##open edge browser
-	mouse.position = (170, 742)
-	mouse.click(Button.left, 1)
-	sleep(5)
-	##click on search bar
-	mouse.position = (290, 72)
-	mouse.click(Button.left, 1)
-	sleep(0.5)
-	##remove text
-	keyboard.press(Key.ctrl)
-	keyboard.press('a')
-	keyboard.release('a')
-	keyboard.release(Key.ctrl)
-	keyboard.press(Key.backspace)
-	keyboard.release(Key.backspace)
-	sleep(0.2)
-	##go to chrome site
-	keyboard.type('https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B0FBDF0EC-4DF6-4765-5C09-45598F7F4281%7D%26lang%3Den%26browser%3D2%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26brand%3DRXQR%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe')
-	keyboard.press(Key.enter)
-	keyboard.release(Key.enter)
-	sleep(4)
-	##naximize
-	pyautogui.keyDown("alt")
-	pyautogui.keyDown("space")
-	pyautogui.press('x')
-	pyautogui.keyUp("alt")
-	pyautogui.keyUp("space")
-	sleep(2)
-	##run installer
-	mouse.position = (960, 705)
-	mouse.click(Button.left, 1)
-	sleep(1)
-	##close eadge
-	mouse.position = (1347, 7)
-	mouse.click(Button.left, 1)
 	##sleep 
 	sleep(25)
 	##maximize
