@@ -17,6 +17,9 @@ def install_chrome():
 	##sleep 
 	sleep(25)
 	##maximize
+	mouse.position = (549, 100)
+	mouse.click(Button.left, 1)
+	sleep(1)
 	pyautogui.keyDown("alt")
 	pyautogui.keyDown("space")
 	pyautogui.press('x')
@@ -161,7 +164,8 @@ def signup():
 		#pyautogui.moveTo( x , y , duration = 0.1)
 		#sleep(0.5)
 		#pyautogui.click(button = "left", clicks = 1 , interval = 0.1)
-		pyautogui.typewrite(c, interval = 0.02)
+		pyautogui.press('tab')
+		keyboard.type(c)
 		## select company
 		#x = 695
 		#y = 524
